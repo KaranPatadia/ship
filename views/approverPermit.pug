@@ -1,0 +1,23 @@
+doctype.html
+html
+  head
+    title Approver Permit
+  body
+    div.container
+      h1 Approver Permit
+      form(action="/ship/approver/permit",method="post")
+        br
+        input.id(type="text",name="id",placeholder="Item ID")
+        br
+        input(type="radio", id="approve", name="status", value="approve")
+        label(for="approve") Approve
+        br
+        input(type="radio", id="reject", name="status", value="reject")
+        label(for="reject") Reject
+        br
+        input(type="radio", id="ammend", name="status", value="ammend")
+        label(for="ammend") Ammend
+        br
+        br
+        input.btn(type="submit",value="submit")
+      p #{error}

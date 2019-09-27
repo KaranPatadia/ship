@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title approver Login
+    link(rel='stylesheet',href='/stylesheets/index.css')
+  body
+    div.container
+      h1 approver Login
+      form(action="/ship/approver/login",method="post")
+        br
+        br
+        input.username(type="text",name="username",placeholder="Username")
+        br
+        input.password(type="password",name="password",placeholder="Password")
+        br
+        input.btn(type="submit",value="submit")
+        br
+        br
+        p #{error}

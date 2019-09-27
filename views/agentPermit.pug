@@ -1,0 +1,20 @@
+doctype.html
+html
+  head
+    title Agent Permit
+  body
+    div.container
+      h1 Agent
+      form(action="/ship/agent/permit",method="post")
+        br
+        input.id(type="text",name="id",placeholder="Item ID")
+        br
+        input(type="radio", id="approve", name="status", value="approve")
+        label(for="approve") Approve
+        br
+        input(type="radio", id="reject", name="status", value="reject")
+        label(for="reject") Reject
+        br
+        br
+        input.btn(type="submit",value="submit")
+      p #{error}

@@ -1,0 +1,24 @@
+doctype.html
+html
+  head
+    title Order Page
+  body
+    div.container
+      h1 Order
+      form(action="/ship/user/order",method="post")
+        br
+        select(name='type')
+          option(value= 'Select') Select Item Type
+          option(value= 'Containers') Container Cargo
+          option(value = 'Liquids') Liquid Goods
+          option(value = 'Fragiles') Fragile Goods
+          option(value = 'AutoMobiles') AutoMobiles
+          option(value = 'Electronics') Electronics
+        br
+        input(type="text",name="name",placeholder="Item Name")
+        br
+        input(type="text",name="qty",placeholder="Item Quantity")
+        br
+        br
+        input.btn(type="submit",value="submit")
+        p #{error}

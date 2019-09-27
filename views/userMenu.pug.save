@@ -1,0 +1,10 @@
+doctype.html
+html
+  head
+    title User Menu page
+  body
+    div.container
+      h1 User Menu
+      br
+      br
+      input.btn(type="button",value="Order",onclick="window.location.pathname='/ship/user/order'")

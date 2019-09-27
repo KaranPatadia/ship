@@ -1,0 +1,18 @@
+doctype.html
+html
+  head
+    title Choose Date
+  body
+    div.container
+      h1 Choose Start and End Date
+      form(action="/ship/company/date",method="post")
+        br
+        input.id(type="text",name="id",placeholder="Item ID")
+        br
+        input.sdate(type="date",name="sdate")
+        br
+        input.edate(type="date",name="edate")
+        br
+        br
+        input.btn(type="submit",value="submit")
+      p #{error}
